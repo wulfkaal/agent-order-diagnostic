@@ -12,10 +12,10 @@ The package requires only the Python 3 standard library.
 
 ## Verify the Release
 
-Run this command from the directory that contains `release/`:
+Run this command from the repository root:
 
 ```text
-python3 release/verify.py
+python3 verify.py
 ```
 
 This checks the ordering and null-beacon vectors, regenerates all nine fixtures in a temporary directory, verifies every file and manifest hash, and tests every released input. A successful run ends with `verify: PASS`.
@@ -23,7 +23,7 @@ This checks the ordering and null-beacon vectors, regenerates all nine fixtures 
 To run one input directly:
 
 ```text
-python3 release/order_diagnostic.py run release/fixtures/01-null-w1.input.json
+python3 order_diagnostic.py run fixtures/01-null-w1.input.json
 ```
 
 ## Input Format
@@ -46,7 +46,7 @@ Four reasons can replace a computed result:
 - `incomplete`: at least one scheduled slot lacks an eligible outcome.
 - `retries_present`: at least one slot required more than one attempt.
 - `multi_node`: the recorded slots ran on more than one machine.
-- `too_few_units`: the channel lacks at least 20 warm units and 20 cold units in contributing treatment cells.
+- `too_few_units`: the contrast is undefined, or the channel has fewer than 20 warm units or fewer than 20 cold units in contributing treatment cells.
 
 The first three reasons apply to the full trial. The last can differ by channel. The recorded order cannot support the same inference when execution is incomplete, retried, spread across machines, or too thin for the contrast.
 
