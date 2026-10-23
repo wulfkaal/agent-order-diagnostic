@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this diagnostic, please cite the paper."
+title: "Testing for Path Dependence in Agent Reputation Measurement: A Randomization Diagnostic"
+type: article
+authors:
+  - family-names: Kaal
+    given-names: Wulf A.
+year: 2026
+version: "draft 2026"
+license: MIT
